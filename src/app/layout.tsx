@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fugaz_One, PT_Serif } from "next/font/google";
 import "./globals.css";
+import Footer from "@/Components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const geistSans = Fugaz_One({
+  variable: "--Prime",
   subsets: ["latin"],
+  weight: "400",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const geistMono = PT_Serif({
+  variable: "--Secound",
   subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -28,6 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );

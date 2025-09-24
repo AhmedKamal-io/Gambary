@@ -4,18 +4,18 @@
   --Blacky: #111111;
   --BlackyFade1: #111111b3;
   --BlackyFade2: #11111180;
-  --Whitey: #f7f7f7;
-  --WhiteyFade1: #f7f7f7b3;
-  --WhiteyFade2: #f7f7f780;
-  --Prime: ;
-  --PrimeFade1: ;
-  --PrimeFade2: ;
-  --Secound: ;
-  --SecoundFade1: ;
-  --SecoundFade2: ;
-  --Assend: ;
-  --AssendFade1: ;
-  --AssendFade2: ;
+  --Whitey: #f8eee0;
+  --WhiteyFade1: #f8eee0b3;
+  --WhiteyFade2: #f8eee080;
+  --Prime: #fb6404;
+  --PrimeFade1: #fb6404b3;
+  --PrimeFade2: #fb640480;
+  --Secound: #4d7788;
+  --SecoundFade1: #4d7788b3;
+  --SecoundFade2: #4d778880;
+  --Assend: #ffd78c;
+  --AssendFade1: #ffd78cb3;
+  --AssendFade2: #ffd78c80;
   --textColor: ;
 }
 
@@ -45,9 +45,9 @@
 }
 
 body {
-  background: var(--Blacky);
+  background: linear-gradient(to bottom, #93c5fd, #2563eb, #172554, #0f172a);
   color: var(--textColor);
-  font-family: var(--font-Second);
+  font-family: var(--Second);
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
   user-select: none;
@@ -61,9 +61,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-Prime);
+  font-family: var(--Prime);
   font-weight: bolder;
-  letter-spacing: 2.5px;
+  letter-spacing: 2px;
 }
 .strokeWhitey {
   -webkit-text-stroke: 0.125px var(--Whitey);
@@ -128,4 +128,8 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.GStory {
+  background: conic-gradient(at top right, #c7d3e7, #18212e, #1e93c1);
 }
