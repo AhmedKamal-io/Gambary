@@ -34,7 +34,7 @@ const Grid = () => {
         {/* الصورة الثالثة */}
         <div className="row-span-2 col-start-3 row-start-1 relative">
           <Image
-            src={`/Image/Dubi.webp`}
+            src={`/Image/Dubai.webp`}
             alt="Dubai"
             fill
             className="object-cover shadow-xl shadow-[#4d7788]"
